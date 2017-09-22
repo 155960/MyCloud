@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="bean"
+            type="com.example.zengqiang.mycloud.bean.book.BookBean">
+        </variable>
+    </data>
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/book_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!--此处layout_width设置为wrap_content导致UI不稳定，闪烁-->
+        <ImageView
+            android:id="@+id/book_adapter_img"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:showBookImg='@{bean.images.large}'
+            android:scaleType="fitXY"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0.7"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.title}"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="@color/colorTitle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/string_rating+bean.rating.average}"/>
+    </LinearLayout>
+</layout>

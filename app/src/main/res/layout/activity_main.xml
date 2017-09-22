@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+        <include android:id="@+id/include"
+            layout="@layout/app_bar_main"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"></include>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/nav_menu"
+            app:headerLayout="@layout/nav_header_main"
+            android:background="@color/colorWhite"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="start"
+            ></android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

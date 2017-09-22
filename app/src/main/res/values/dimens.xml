@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="nav_main_height">173dp</dimen>
+    
+    <dimen name="base_title_height">56dp</dimen>
+    <dimen name="base_more_height">45dp</dimen>
+</resources>

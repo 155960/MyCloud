@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <RelativeLayout
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@android:color/transparent">
+       <ImageView
+           android:id="@+id/base_header_title_img"
+           android:layout_width="match_parent"
+           android:layout_height="310dp"
+           android:scaleType="fitXY"/>
+       <android.support.v7.widget.Toolbar
+           android:id="@+id/base_header_title_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="@android:color/transparent"
+           app:layout_collapseMode="pin"
+           app:layout_scrollFlags="scroll"
+           app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+           app:theme="@style/toolbarStyle"
+           ></android.support.v7.widget.Toolbar>
+   </RelativeLayout>
+</layout>
